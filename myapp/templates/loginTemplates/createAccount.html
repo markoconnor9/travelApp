@@ -1,0 +1,16 @@
+<form action="" method=POST autocomplete="off">
+    {% csrf_token %}
+
+    first name: {{ form.first_name }}
+    <br>
+    <br>
+    last Name: {{ form.last_name }}
+    <br>
+    <br>
+    Email: {{ form.email }}
+    <br>
+    <br>
+    Password : {{form.password}}
+       <input type="submit" value="Submit">
+
+</form>
